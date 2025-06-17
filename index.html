@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Front-End Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section with Particle Background and Decorative Wave -->
+    <section id="about" class="section">
+        <canvas id="particle-canvas"></canvas>
+        <div class="wave-top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path fill="#1E90FF" fill-opacity="0.2" d="M0,80 L48,40 Q96,0 144,40 T288,40 T432,40 T576,40 T720,40 T864,40 T1008,40 T1152,40 T1296,40 T1392,40 L1440,80 V0 H0 Z"></path>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>Hi, I'm Russel</h1>
+                <p class="typing">Aspiring Front-End Developer & UI/UX Designer</p>
+            </div>
+            <div class="image-content">
+                <img src="russ.jpg" alt="Russel Profile" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Wave Background -->
+    <section id="skills" class="section">
+        <div class="wave-background">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#1E90FF" fill-opacity="0.1" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,176C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L0,320Z"></path>
+            </svg>
+        </div>
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">UI/UX Design</div>
+            <div class="skill">Responsive Design</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A responsive landing page built with HTML, CSS, and JavaScript, showcasing a modern design.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A UI/UX prototype for a mobile app, designed with a focus on user experience.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>An interactive web app using JavaScript to create dynamic user interactions.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Wave Background -->
+    <section id="contact" class="section">
+        <div class="wave-background">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#1E90FF" fill-opacity="0.1" d="M0,128L48,144C96,160,192,192,288,192C384,192,480,160,576,144C672,128,768,128,864,144C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L0,320Z"></path>
+            </svg>
+        </div>
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:your.email@example.com">russeljohn.coronel4@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/russel-coronel-b125192ab/">Russel Coronel</a></p>
+            <p>GitHub: <a href="https://github.com/Russ-WebDev">Russ-WebDev</a></p>
+        </div>
+    </section>
+
+    <!-- Footer with Wave Decoration -->
+    <footer>
+        <div class="wave-footer">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path fill="#2E2E2E" fill-opacity="0.8" d="M0,0 L48,40 Q96,80 144,40 T288,40 T432,40 T576,40 T720,40 T864,40 T1008,40 T1152,40 T1296,40 T1392,40 L1440,0 V80 H0 Z"></path>
+        </svg>
+        </div>
+        <p>© 2025 Russ_Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" title="Back to Top">↑</button>
+
+    <!-- SVG Filter Definition -->
+    <svg style="display:none;">
+        <filter id="pixelate" x="0" y="0">
+            <feFlood x="2" y="2" height="1" width="1"/>
+            <feComposite operator="over"/>
+            <feTile result="a"/>
+            <feComposite operator="in" in="SourceGraphic"/>
+            <feConvolveMatrix order="3, 3" kernelMatrix="1 1 1 1 1 1 1 1 1" divisor="9" bias="0" edgeMode="duplicate"/>
+        </filter>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
